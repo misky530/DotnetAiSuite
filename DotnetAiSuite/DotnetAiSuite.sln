@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetAiSuite", "DotnetAiSuite\DotnetAiSuite.csproj", "{BDC761A9-AD8D-4A3B-9513-A9A463F7EE8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Core", "AI.Core\AI.Core.csproj", "{91D528B5-CB71-4C75-8908-508A0EDD1AE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BDC761A9-AD8D-4A3B-9513-A9A463F7EE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC761A9-AD8D-4A3B-9513-A9A463F7EE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC761A9-AD8D-4A3B-9513-A9A463F7EE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D528B5-CB71-4C75-8908-508A0EDD1AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D528B5-CB71-4C75-8908-508A0EDD1AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D528B5-CB71-4C75-8908-508A0EDD1AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D528B5-CB71-4C75-8908-508A0EDD1AE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
