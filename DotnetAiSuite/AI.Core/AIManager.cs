@@ -4,14 +4,14 @@ namespace AI.Core;
 
 public class AiManager
 {
-    private readonly Dictionary<string, IAiService> _providers = new();
+    private readonly Dictionary<string, IAIService> _providers = new();
 
-    public void RegisterProvider(string name, IAiService service)
+    public void RegisterProvider(string name, IAIService service)
     {
         _providers.TryAdd(name, service);
     }
 
-    public IAiService GetProvider(string name)
+    public IAIService GetProvider(string name)
     {
         if (!_providers.TryGetValue(name, out var value))
         {

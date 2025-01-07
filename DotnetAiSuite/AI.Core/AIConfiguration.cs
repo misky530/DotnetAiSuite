@@ -5,8 +5,8 @@ namespace AI.Core;
 
 public class AiConfiguration(IConfiguration configuration)
 {
-    public AiOptions? GetOptions(string provider)
+    public AIOptions? GetOptions(string provider)
     {
-        return configuration.GetSection($"AIProviders:{provider}").Get<AiOptions>();
+        return configuration.GetSection($"AIProviders:{provider}").Get<AIOptions>();
     }
 }

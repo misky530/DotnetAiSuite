@@ -1,6 +1,6 @@
 ﻿namespace AI.Core.Models;
 
-public abstract class AiOptions
+public abstract class AIOptions
 {
     public required string ApiKey { get; set; }
     public required string Endpoint { get; set; }
