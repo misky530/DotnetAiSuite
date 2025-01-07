@@ -133,3 +133,33 @@ AI-Suite
 ## 4.4 运行 Demo
 
 运行 AI.Demo 项目，体验 AI Suite 的功能。
+
+# 5 关于命名
+## 5.1 .NET 官方命名规范
+### 根据 .NET 官方的命名指南（Capitalization Conventions）：
+``` text
+PascalCase 是类名、属性名、方法名等的标准格式，每个单词的首字母应大写。
+缩写的处理方式：
+对于 两个字母的缩写（如 AI、ID），在 PascalCase 中，微软建议保留全大写。因此，AI 应保留为大写。
+例如：OpenAIService 合规。
+对于 三个字母及以上的缩写（如 HTTP、XML），在 PascalCase 中，建议只有首字母大写。
+例如：HttpClient 而不是 HTTPClient。
+按照这个规则，AI 是一个 2 字母缩写，因此建议保持全大写，即 OpenAIService 是更符合 .NET 社区官方规范的写法。
+```
+## 5.2. Rider 的 PascalCase 提示
+```
+Rider 提示将 AI 转换为 Ai 是因为它认为所有单词，包括缩写，应该严格遵循 PascalCase 的规则。但这并不是强制要求，而是 Rider 的风格偏好。如果 Rider 提示将 AI 修改为 Ai，你可以选择以下两种方式处理：
+
+选择遵守 Rider 的建议：将缩写视为普通单词，使用 Ai,  本项目选择使用Rider的建议.
+
+选择遵守 .NET 的官方风格：保留 AI，并忽略 Rider 提示.
+```
+
+
+
+## 5.3 一致性优先
+   无论选择 OpenAIService 还是 OpenAiService，项目内部命名风格的一致性 比具体格式更重要。如果你在某些地方使用 AI，而其他地方使用 Ai，会导致代码风格混乱。以下是一些建议：
+
+推荐的保持一致的命名方式：
+如果其他缩写（例如 ID、URL）在项目中保持全大写，则应统一使用 OpenAIService。
+如果 Rider 的 PascalCase 提示是团队约定的风格，则统一使用 OpenAiService。
