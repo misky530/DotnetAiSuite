@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Providers", "AI.Provider
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Demo.Conapp", "AI.Demo.Conapp\AI.Demo.Conapp.csproj", "{B08B0700-5796-4F07-857D-05FDA77E9369}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Demo.WebApp", "AI.Demo.WebApp\AI.Demo.WebApp.csproj", "{CE62244F-C450-4602-98BF-A2969E866B4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{B08B0700-5796-4F07-857D-05FDA77E9369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B08B0700-5796-4F07-857D-05FDA77E9369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B08B0700-5796-4F07-857D-05FDA77E9369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE62244F-C450-4602-98BF-A2969E866B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE62244F-C450-4602-98BF-A2969E866B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE62244F-C450-4602-98BF-A2969E866B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE62244F-C450-4602-98BF-A2969E866B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
