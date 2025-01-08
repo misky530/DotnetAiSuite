@@ -10,4 +10,8 @@
       <ProjectReference Include="..\AI.Core\AI.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="OpenAI\Assets\" />
+    </ItemGroup>
+
 </Project>
