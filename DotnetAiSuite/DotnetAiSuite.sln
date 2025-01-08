@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Core", "AI.Core\AI.Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Providers", "AI.Providers\AI.Providers.csproj", "{06A85FD5-70E0-4AAA-954F-9959E3003505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Demo.Conapp", "AI.Demo.Conapp\AI.Demo.Conapp.csproj", "{B08B0700-5796-4F07-857D-05FDA77E9369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{06A85FD5-70E0-4AAA-954F-9959E3003505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06A85FD5-70E0-4AAA-954F-9959E3003505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06A85FD5-70E0-4AAA-954F-9959E3003505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08B0700-5796-4F07-857D-05FDA77E9369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08B0700-5796-4F07-857D-05FDA77E9369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08B0700-5796-4F07-857D-05FDA77E9369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08B0700-5796-4F07-857D-05FDA77E9369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
