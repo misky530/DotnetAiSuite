@@ -1,9 +1,10 @@
 ﻿namespace AI.Providers.OpenAI.Assistants;
 
+
 public partial class AssistantExamples
 {
     // [Test]
-    // public void Example01_RetrievalAugmentedGeneration()
+    // public async Task Example01_RetrievalAugmentedGenerationAsync()
     // {
     //     // Assistants is a beta API and subject to change; acknowledge its experimental status by suppressing the matching warning.
     //     #pragma warning disable OPENAI001
@@ -41,7 +42,7 @@ public partial class AssistantExamples
     //         }
     //         """u8.ToArray()).ToStream();
     //
-    //     OpenAIFile salesFile = fileClient.UploadFile(
+    //     OpenAIFile salesFile = await fileClient.UploadFileAsync(
     //         document,
     //         "monthly_sales.json",
     //         FileUploadPurpose.Assistants);
@@ -71,7 +72,7 @@ public partial class AssistantExamples
     //         },
     //     };
     //
-    //     Assistant assistant = assistantClient.CreateAssistant("gpt-4o", assistantOptions);
+    //     Assistant assistant = await assistantClient.CreateAssistantAsync("gpt-4o", assistantOptions);
     //
     //     // Now we'll create a thread with a user query about the data already associated with the assistant, then run it
     //     ThreadCreationOptions threadOptions = new()
@@ -79,7 +80,7 @@ public partial class AssistantExamples
     //         InitialMessages = { "How well did product 113045 sell in February? Graph its trend over time." }
     //     };
     //
-    //     ThreadRun threadRun = assistantClient.CreateThreadAndRun(assistant.Id, threadOptions);
+    //     ThreadRun threadRun = await assistantClient.CreateThreadAndRunAsync(assistant.Id, threadOptions);
     //
     //     // Check back to see when the run is done
     //     do
@@ -89,10 +90,10 @@ public partial class AssistantExamples
     //     } while (!threadRun.Status.IsTerminal);
     //
     //     // Finally, we'll print out the full history for the thread that includes the augmented generation
-    //     CollectionResult<ThreadMessage> messages
-    //         = assistantClient.GetMessages(threadRun.ThreadId, new MessageCollectionOptions() { Order = MessageCollectionOrder.Ascending });
+    //     AsyncCollectionResult<ThreadMessage> messages
+    //         = assistantClient.GetMessagesAsync(threadRun.ThreadId, new MessageCollectionOptions() { Order = MessageCollectionOrder.Ascending });
     //
-    //     foreach (ThreadMessage message in messages)
+    //     await foreach (ThreadMessage message in messages)
     //     {
     //         Console.Write($"[{message.Role.ToString().ToUpper()}]: ");
     //         foreach (MessageContent contentItem in message.Content)
@@ -121,8 +122,8 @@ public partial class AssistantExamples
     //             }
     //             if (!string.IsNullOrEmpty(contentItem.ImageFileId))
     //             {
-    //                 OpenAIFile imageInfo = fileClient.GetFile(contentItem.ImageFileId);
-    //                 BinaryData imageBytes = fileClient.DownloadFile(contentItem.ImageFileId);
+    //                 OpenAIFile imageInfo = await fileClient.GetFileAsync(contentItem.ImageFileId);
+    //                 BinaryData imageBytes = await fileClient.DownloadFileAsync(contentItem.ImageFileId);
     //                 using FileStream stream = File.OpenWrite($"{imageInfo.Filename}.png");
     //                 imageBytes.ToStream().CopyTo(stream);
     //
@@ -133,8 +134,8 @@ public partial class AssistantExamples
     //     }
     //
     //     // Optionally, delete any persistent resources you no longer need.
-    //     _ = assistantClient.DeleteThread(threadRun.ThreadId);
-    //     _ = assistantClient.DeleteAssistant(assistant.Id);
-    //     _ = fileClient.DeleteFile(salesFile.Id);
+    //     _ = await assistantClient.DeleteThreadAsync(threadRun.ThreadId);
+    //     _ = await assistantClient.DeleteAssistantAsync(assistant.Id);
+    //     _ = await fileClient.DeleteFileAsync(salesFile.Id);
     // }
 }
