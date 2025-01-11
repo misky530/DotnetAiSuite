@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <Folder Include="OpenAI\Assets\" />
+      <Folder Include="OpenAI\Chat\" />
     </ItemGroup>
 
 </Project>
