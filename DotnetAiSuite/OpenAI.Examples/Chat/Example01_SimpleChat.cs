@@ -19,7 +19,7 @@ public partial class ChatExamples
     }
 
     [Test]
-    public void Example02_SimpleChat()
+    public void Example01_SimpleChat_Proxy()
     {
         var option = new OpenAIClientOptions
         {
