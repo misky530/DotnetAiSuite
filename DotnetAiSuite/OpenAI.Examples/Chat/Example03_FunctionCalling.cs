@@ -54,7 +54,12 @@ public partial class ChatExamples
     [Test]
     public void Example03_FunctionCalling()
     {
-        ChatClient client = new("gpt-4-turbo", Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
+        // ChatClient client = new("gpt-4-turbo", Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
+        var (option, credentials) = ProxyBuilder.Build();
+
+        // 初始化 OpenAIClient
+        var iOpenAiClient = new OpenAIClient(credentials, option);
+        var client = iOpenAiClient.GetChatClient(model: "gpt-4-turbo");
 
         #region
         List<ChatMessage> messages =
